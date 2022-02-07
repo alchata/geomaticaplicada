@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang=es>
+    <head>
+            <!--codificacion de caracteres / tildes-->
+            <meta charset="utf-8"/>
+            <!--titulo de la web-->
+            <title>Geomática Aplicada</title>
+
+            <!--vieport responsive - se adpata al tamaño de la ventana, se carga el responsive y se bloquea que el usuario pueda hacer zoom o escalar en la webapp-->
+            <meta name="viewport" content="width=device-width, initial-scale= 1.0 maximun-scale=1.0, user-scalable=no" /> 
+            
+            <!--icono de la web-->
+            <link rel ="shortcut icon" type="image/png" href="img/favicon.png"/>
+    
+            <!--meta etiquetas para PWA - Progressive Web Application-->
+            <!--color de la aplicacion-->
+            <meta name="theme color" content="#FB314E"/>
+            <!--optimizacion para movil-->
+            <meta name="MobileOptimized" content="width"/>
+            <meta name="HandheldFriendly" content="true"/>
+            <!--Meta etiquetas PWA para Apple-->
+            <meta name="apple-mobile-web-app-capable" content="yes"/>
+            <meta name="apple-mobile-web-app-status-bar-style" content="black-traslucent"/>
+            <link rel="apple-touch-icon" href="img/favicon.png"/>
+            <link rel="apple-touch-startup-image" href="img/favicon.png"/>
+
+            <!--configuracion general de la PWA - Manifiesto - manifest.json-->
+            <link rel="manifest" href="manifest.json"/>
+
+
+            <!--hojas de estilos-->
+            <link rel="stylesheet" href="css/styles.css">
+
+            <!--jQuery - - https://developers.google.com/speed/libraries-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+            <!--Scripts-->
+            <script src="main.js"></script>
+    </head>
+    <body>
+        <header id="main-header">
+            <div class="container">
+                <div id="logo">
+                    <!--<img src="img/favicon-64.png">-->
+                    <h1>Geomática Aplicada</h1>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li>
+                            <a href="#main-header">
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#servicios">
+                                Servicios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#videos">
+                                Videos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#footer">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--end menu-->
+            </div><!--end container -->
+        </header>
+        <div class="clearfix"></div> <!--limpia lo flotado que se producen em el menu - evita que el div se suba en la visualizacion de la pagina-->
+        <div id="slider">
+            <div class="container">
+                <h2>Servicios Profesionales en Geomática</h2>
+            </div>
+        </div>
+
+        <div id="servicios">
+            <div class="container">
+            <h2 class="subheader">Servicios</h2>
+            <div class="servicio">
+                <img src="img/1.jpg">
+                <h3>Sistemas de Información Geográfica</h3>
+                <p>
+                    Servicios de Consultoria Especializados en Sistemas de Información Geográfica
+                </p>
+            </div>
+            <div class="servicio">
+                <img src="img/2.jpg">
+                <h3>Desarrollo SIG Web</h3>
+                <p>
+                    Desarrollo de Aplicaciones de Sistemas de información Geográfico en la Web
+                </p>
+            </div>
+            <div class="servicio">
+                <img src="img/3.jpg">
+                <h3>Captura de Información Geográfica</h3>
+                <p>
+                    Servicios de Captura de Información Geográfica mediante Topografía, Georreferenciación GNSS, Drone, LiDAR.
+                </p>
+            </div>
+            </div><!--end container-->
+        </div><!--end servicios-->
+
+        <div class="clearfix"></div>
+
+        <div id="videos">
+            <div class="container">
+                <h2 class="subheader">Videos</h2>
+                <div class="video">
+                    <h2 class="subheader"></h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cWQcmHs6QZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>
+                        Que es un SIG
+                    </p>
+                </div>
+                <div class="video">
+                    <h2 class="subheader"></h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pqHAPmB7txQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>
+                        Plataforma ArcGIS
+                    </p>
+                </div>
+                <div class="video">
+                    <h2 class="subheader"></h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DTEnKqfDAv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>
+                        Que es ArcGIS Online
+                    </p>
+                </div>
+            </div>
+        </div><!--end videos-->
+
+        <div class="clearfix"></div>
+
+        <footer id="footer">
+            <div class="container">
+                <h2 class="subheader">Contacto</h2>
+                <p>Puede Contactarse en:</p>
+                <ul id="networks">
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=573168009432" target="_blank" title="WhatsApp">
+                            <img src="img/whatsapp.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/geomatica.aplicada.79"target="_blank" title="Facebook">
+                            <img src="img/facebook.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/geomaticaplicada/"target="_blank" title="Instagram">
+                            <img src="img/instagram.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:geomaticaplicada@gmail.com/"target="_blank" title="Enviar Email">
+                            <img src="img/mail.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://alchata.wixsite.com/geomaticaplicada"target="_blank" title="Sitio Web">
+                            <img src="img/web.png">
+                        </a>
+                    </li>
+                </ul>
+            <div class="clearfix"></div>
+            </div>
+        </footer>
+        <div class="clearfix"></div>
+    </body>
+
+
+
+
+
+</html>

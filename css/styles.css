@@ -1,0 +1,274 @@
+/* estilos generqales*/
+/*resetear los margenes del navegador*/
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Open Sans', Verdana;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body{
+    background: white;
+}
+
+.clearfix{ /*mantiene los elementos en su sitio*/
+    clear: both; 
+    float: none;
+}
+
+.container{
+    width: 85%;
+    margin: 0px auto; /*centrar en bloque*/
+}
+
+/*cabeceda*/
+#main-header{
+    background: white;
+    height: 100px;
+    line-height: 85px;/*centra el texto en cabecera*/
+}
+
+#logo{
+    width: 63%;
+    float: left;
+}
+
+#logo h1{
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(70, 5, 223);
+}
+
+#menu{
+    width: 400px;
+    float: left;
+}
+
+#menu ul li{
+    list-style: none; /*no coloca las viñetas*/
+    float: left;
+    margin-left: 19px;
+    margin-right: 19px;
+}
+
+#menu ul li a{
+    color: black;
+}
+
+#menu ul li a:hover{/*cuando se pasa el cursor por encima*/
+    color: blue;
+}
+
+/*slider- contenedor central*/
+
+#slider{
+    height: 300px;
+    Background:#FB314E;
+}
+
+#slider h2{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    line-height: 290px;
+    text-shadow: 0px 0px 6px black;
+}
+
+.subheader{
+    font-size: 34px;
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(251, 49, 78, 0.3);
+}
+
+.servicio, .video{
+    width: 33%;
+    text-align: center;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.servicio img{
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.servicio h3{
+    margin-bottom: 10px;
+}
+
+.servicio p, .video p{
+    color: #444;
+    text-align: center;
+    display: block;
+    width: 85%;
+    margin: 0px auto;
+}
+
+/*videos*/
+
+.video iframe{
+    width: 80%;
+    height: 170px;
+}
+
+/* footer - contacto - pie de pagina*/
+
+#footer{
+    background: #333;
+    padding-top: 5px;
+    padding-bottom:40px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+#footer .subheader{
+    color: white;
+}
+
+#networks{
+    display: block;
+    width: 450px;
+    margin: 0px auto;
+    list-style: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#networks li{/* coloca cada elemento al lado izquierdo del anterior*/
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 300ms;
+}
+
+#networks li:hover{ /* cuando se pasa el cursor por encima del icono se pone mas opaco y aumenta un poco de tamaño*/
+    opacity: 0.8;
+    transform: scale(1.1, 1.1);
+}
+/*css para el responsive de la web y que se adapte a las diferentes pantallas mediante los media queries*/
+@media all and (max-width: 1225px) { /*all: todo tipo de pantalla - screen:ordenador - print: vista de impresion https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries*/
+
+    .container{
+        width: 95%;
+    }
+} 
+
+@media (max-width: 1085px){
+
+    #main-header{
+        height: 70px;
+        line-height: 65px;
+    }
+
+    #logo{
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 999px){
+   
+    #logo{
+        width: 227px;
+        float: none;
+        margin: 0px auto;
+    }
+
+    #menu{
+        float: none;
+        margin: 0px auto;
+    }
+    
+    #slider {/*evita que lo que esta en el slider no se salga del slider ni de la pagina*/
+        overflow: hidden;
+        height: 150px;
+    }
+
+    #slider h2{/*evita que lo que esta en el slider no se salga del slider ni de la pagina*/
+    
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 780px){
+    
+    .servicio, .video{
+        width: 70%;
+        float: none;
+        margin: 0px auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .servicio img{
+        margin-bottom: 10px;
+    }
+
+    .video iframe{
+        width: 80%;
+        height: 230px;
+    }
+
+    .servicio p, .video p{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 460px){
+    
+    #slider h2{
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 377px){
+    
+    #menu{
+        width: 100%;
+        text-align: center;
+
+    }
+    
+    #menu ul li{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    #slider h2{
+        margin-top: 40px;
+    }
+
+    .servicio, .video{
+        width: 90%;
+    }
+
+    .video iframe{
+        width: 80%;
+        height: 140px;
+    }
+}
+
+@media (max-width: 345px){
+    
+    #main-header{
+        height: auto;
+    }
+    
+    #menu ul li{
+        float: none;
+    }
+}
